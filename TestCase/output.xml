@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20191226 17:10:31.989" rpa="false">
-<suite id="s1" name="Login" source="C:\Users\shariprakash\PycharmProjects\Intaact\TestCase\Login.robot">
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200102 16:16:20.526" rpa="false">
+<suite id="s1" name="Login" source="C:\Users\shariprakash\PycharmProjects\Intaact\TestCase\login.robot">
 <test id="s1-t1" name="Tc01_login">
 <kw name="Open Browser and URL Launch" library="Setup">
 <kw name="Open Browser" library="SeleniumLibrary">
@@ -9,14 +9,14 @@
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:32.154" level="INFO">Opening browser 'chrome' to base url 'https://www.intacct.com/ia/acct/login.phtml?_ga=2.83361237.2116873815.1576557230-1752594069.1571974709'.</msg>
-<status status="PASS" starttime="20191226 17:10:32.154" endtime="20191226 17:10:40.497"></status>
+<msg timestamp="20200102 16:16:20.701" level="INFO">Opening browser 'chrome' to base url 'https://www.intacct.com/ia/acct/login.phtml?_ga=2.83361237.2116873815.1576557230-1752594069.1571974709'.</msg>
+<status status="PASS" starttime="20200102 16:16:20.701" endtime="20200102 16:16:31.151"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20191226 17:10:40.497" endtime="20191226 17:10:41.624"></status>
+<status status="PASS" starttime="20200102 16:16:31.151" endtime="20200102 16:16:35.317"></status>
 </kw>
-<status status="PASS" starttime="20191226 17:10:32.154" endtime="20191226 17:10:41.624"></status>
+<status status="PASS" starttime="20200102 16:16:20.701" endtime="20200102 16:16:35.317"></status>
 </kw>
 <kw name="Login Credentials" library="Login Credentials">
 <arguments>
@@ -30,7 +30,7 @@
 <arg>${CompanyID}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.625" endtime="20191226 17:10:41.636"></status>
+<status status="PASS" starttime="20200102 16:16:35.317" endtime="20200102 16:16:35.364"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -38,7 +38,7 @@
 <arg>${CompanyID}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.637" endtime="20191226 17:10:41.657"></status>
+<status status="PASS" starttime="20200102 16:16:35.364" endtime="20200102 16:16:35.444"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -46,8 +46,8 @@
 <arg>${CompanyID}</arg>
 <arg>${companycode}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:41.658" level="INFO">Typing text 'prokarma' into text field 'css:#company'.</msg>
-<status status="PASS" starttime="20191226 17:10:41.657" endtime="20191226 17:10:41.708"></status>
+<msg timestamp="20200102 16:16:35.444" level="INFO">Typing text 'prokarma' into text field 'css:#company'.</msg>
+<status status="PASS" starttime="20200102 16:16:35.444" endtime="20200102 16:16:35.536"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -55,7 +55,7 @@
 <arg>${Username}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.708" endtime="20191226 17:10:41.717"></status>
+<status status="PASS" starttime="20200102 16:16:35.537" endtime="20200102 16:16:35.554"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -63,7 +63,7 @@
 <arg>${Username}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.717" endtime="20191226 17:10:41.738"></status>
+<status status="PASS" starttime="20200102 16:16:35.555" endtime="20200102 16:16:35.582"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -71,8 +71,8 @@
 <arg>${Username}</arg>
 <arg>${Username_input}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:41.738" level="INFO">Typing text 'shariprakash' into text field 'css:#login'.</msg>
-<status status="PASS" starttime="20191226 17:10:41.738" endtime="20191226 17:10:41.802"></status>
+<msg timestamp="20200102 16:16:35.583" level="INFO">Typing text 'shariprakash' into text field 'css:#login'.</msg>
+<status status="PASS" starttime="20200102 16:16:35.583" endtime="20200102 16:16:35.658"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -80,7 +80,7 @@
 <arg>${password}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.802" endtime="20191226 17:10:41.811"></status>
+<status status="PASS" starttime="20200102 16:16:35.658" endtime="20200102 16:16:35.668"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -88,7 +88,7 @@
 <arg>${password}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.811" endtime="20191226 17:10:41.827"></status>
+<status status="PASS" starttime="20200102 16:16:35.668" endtime="20200102 16:16:35.687"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -96,8 +96,8 @@
 <arg>${password}</arg>
 <arg>${Password_input}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:41.827" level="INFO">Typing text 'Mch@2789' into text field 'css:#passwd'.</msg>
-<status status="PASS" starttime="20191226 17:10:41.827" endtime="20191226 17:10:41.881"></status>
+<msg timestamp="20200102 16:16:35.687" level="INFO">Typing text 'Mch@2789' into text field 'css:#passwd'.</msg>
+<status status="PASS" starttime="20200102 16:16:35.687" endtime="20200102 16:16:35.764"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
@@ -105,7 +105,7 @@
 <arg>${signin}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.881" endtime="20191226 17:10:41.891"></status>
+<status status="PASS" starttime="20200102 16:16:35.765" endtime="20200102 16:16:35.774"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -113,17 +113,17 @@
 <arg>${signin}</arg>
 <arg>timeout=10s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:41.891" endtime="20191226 17:10:41.907"></status>
+<status status="PASS" starttime="20200102 16:16:35.774" endtime="20200102 16:16:35.797"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${signin}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:41.907" level="INFO">Clicking element 'css:#retbutton'.</msg>
-<status status="PASS" starttime="20191226 17:10:41.907" endtime="20191226 17:10:45.423"></status>
+<msg timestamp="20200102 16:16:35.797" level="INFO">Clicking element 'css:#retbutton'.</msg>
+<status status="PASS" starttime="20200102 16:16:35.797" endtime="20200102 16:16:41.119"></status>
 </kw>
-<status status="PASS" starttime="20191226 17:10:41.625" endtime="20191226 17:10:45.423"></status>
+<status status="PASS" starttime="20200102 16:16:35.317" endtime="20200102 16:16:41.119"></status>
 </kw>
 <kw name="Selecting Timesheet" library="Global_Selectingtimesheet">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -132,7 +132,7 @@
 <arg>${Time&amp;Expaneses}</arg>
 <arg>timeout=20s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:45.425" endtime="20191226 17:10:46.399"></status>
+<status status="PASS" starttime="20200102 16:16:41.121" endtime="20200102 16:16:42.657"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -140,15 +140,15 @@
 <arg>${Time&amp;Expaneses}</arg>
 <arg>timeout=20s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:46.399" endtime="20191226 17:10:46.467"></status>
+<status status="PASS" starttime="20200102 16:16:42.658" endtime="20200102 16:16:42.741"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${Time&amp;Expaneses}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:46.468" level="INFO">Clicking element '//*[@id='main-menu']/span[text()='Time &amp; Expenses']'.</msg>
-<status status="PASS" starttime="20191226 17:10:46.467" endtime="20191226 17:10:46.612"></status>
+<msg timestamp="20200102 16:16:42.742" level="INFO">Clicking element '//*[@id='main-menu']/span[text()='Time &amp; Expenses']'.</msg>
+<status status="PASS" starttime="20200102 16:16:42.741" endtime="20200102 16:16:42.856"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -156,7 +156,7 @@
 <arg>${mytimesheet}</arg>
 <arg>timeout=20s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:46.612" endtime="20191226 17:10:46.640"></status>
+<status status="PASS" starttime="20200102 16:16:42.856" endtime="20200102 16:16:42.886"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -164,23 +164,23 @@
 <arg>${mytimesheet}</arg>
 <arg>timeout=20s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:46.640" endtime="20191226 17:10:46.663"></status>
+<status status="PASS" starttime="20200102 16:16:42.887" endtime="20200102 16:16:42.915"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${mytimesheet}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:46.663" level="INFO">Clicking element '//a[text()='My timesheets']'.</msg>
-<status status="PASS" starttime="20191226 17:10:46.663" endtime="20191226 17:10:47.454"></status>
+<msg timestamp="20200102 16:16:42.915" level="INFO">Clicking element '//a[text()='My timesheets']'.</msg>
+<status status="PASS" starttime="20200102 16:16:42.915" endtime="20200102 16:16:43.707"></status>
 </kw>
 <kw name="Select Frame" library="SeleniumLibrary">
 <doc>Sets frame identified by ``locator`` as the current frame.</doc>
 <arguments>
 <arg>${Frame}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:47.454" level="INFO">Selecting frame 'css:#iamain'.</msg>
-<status status="PASS" starttime="20191226 17:10:47.454" endtime="20191226 17:10:47.484"></status>
+<msg timestamp="20200102 16:16:43.707" level="INFO">Selecting frame 'css:#iamain'.</msg>
+<status status="PASS" starttime="20200102 16:16:43.707" endtime="20200102 16:16:43.735"></status>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is visible.</doc>
@@ -188,7 +188,7 @@
 <arg>${addtimesheet}</arg>
 <arg>timeout=20s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:47.484" endtime="20191226 17:10:47.503"></status>
+<status status="PASS" starttime="20200102 16:16:43.735" endtime="20200102 16:16:43.757"></status>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` is enabled.</doc>
@@ -196,22 +196,137 @@
 <arg>${addtimesheet}</arg>
 <arg>timeout=20s</arg>
 </arguments>
-<status status="PASS" starttime="20191226 17:10:47.503" endtime="20191226 17:10:47.521"></status>
+<status status="PASS" starttime="20200102 16:16:43.757" endtime="20200102 16:16:43.778"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>${addtimesheet}</arg>
 </arguments>
-<msg timestamp="20191226 17:10:47.521" level="INFO">Clicking element 'css:#qx-top_add'.</msg>
-<status status="PASS" starttime="20191226 17:10:47.521" endtime="20191226 17:10:47.622"></status>
+<msg timestamp="20200102 16:16:43.779" level="INFO">Clicking element 'css:#qx-top_add'.</msg>
+<status status="PASS" starttime="20200102 16:16:43.778" endtime="20200102 16:16:43.865"></status>
 </kw>
-<status status="PASS" starttime="20191226 17:10:45.424" endtime="20191226 17:10:47.622"></status>
+<status status="PASS" starttime="20200102 16:16:41.120" endtime="20200102 16:16:43.866"></status>
 </kw>
-<status status="PASS" starttime="20191226 17:10:32.154" endtime="20191226 17:10:47.622" critical="yes"></status>
+<kw name="Selecting Project and Task from List1" library="SelectProject">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${project_textbox0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:43.867" endtime="20200102 16:16:45.227"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${project_textbox0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:45.227" endtime="20200102 16:16:45.271"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${project_textbox0}</arg>
+</arguments>
+<msg timestamp="20200102 16:16:45.271" level="INFO">Clicking element '//*[@id="_obj__TIMESHEETITEMS_0_-_obj__PROJECTID"]'.</msg>
+<status status="PASS" starttime="20200102 16:16:45.271" endtime="20200102 16:16:45.347"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${project_dropdown0}</arg>
+</arguments>
+<msg timestamp="20200102 16:16:45.347" level="INFO">Clicking element '//*[@id='span__obj__TIMESHEETITEMS_0_-_obj__PROJECTID']/i'.</msg>
+<status status="PASS" starttime="20200102 16:16:45.347" endtime="20200102 16:16:45.460"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${project_dropdown_list_of_project0}</arg>
+<arg>timeout=10s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:45.460" endtime="20200102 16:16:46.819"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${project_dropdown_list_of_project0}</arg>
+</arguments>
+<msg timestamp="20200102 16:16:46.820" level="INFO">Clicking element '//*[@id="_c_obj__TIMESHEETITEMS_0_-_obj__PROJECTIDsel"]/option[3]'.</msg>
+<status status="PASS" starttime="20200102 16:16:46.820" endtime="20200102 16:16:46.879"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${task_textbox0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:46.879" endtime="20200102 16:16:46.905"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${task_textbox0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:46.905" endtime="20200102 16:16:46.926"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${task_textbox0}</arg>
+</arguments>
+<msg timestamp="20200102 16:16:46.926" level="INFO">Clicking element '//*[@id="_obj__TIMESHEETITEMS_0_-_obj__TASKID"]'.</msg>
+<status status="PASS" starttime="20200102 16:16:46.926" endtime="20200102 16:16:46.990"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${task_dropdown0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:46.990" endtime="20200102 16:16:47.010"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${task_dropdown0}</arg>
+</arguments>
+<msg timestamp="20200102 16:16:47.011" level="INFO">Clicking element '//*[@id="span__obj__TIMESHEETITEMS_0_-_obj__TASKID"]/i'.</msg>
+<status status="PASS" starttime="20200102 16:16:47.010" endtime="20200102 16:16:47.103"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is visible.</doc>
+<arguments>
+<arg>${selecting_task_dropdown0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:47.103" endtime="20200102 16:16:47.128"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>${selecting_task_dropdown0}</arg>
+<arg>timeout=20s</arg>
+</arguments>
+<status status="PASS" starttime="20200102 16:16:47.128" endtime="20200102 16:16:47.152"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${selecting_task_dropdown0}</arg>
+</arguments>
+<msg timestamp="20200102 16:16:47.152" level="INFO">Clicking element '//*[@id="_c_obj__TIMESHEETITEMS_0_-_obj__TASKIDsel"]/option[1]'.</msg>
+<status status="PASS" starttime="20200102 16:16:47.152" endtime="20200102 16:16:47.185"></status>
+</kw>
+<status status="PASS" starttime="20200102 16:16:43.866" endtime="20200102 16:16:47.185"></status>
+</kw>
+<status status="PASS" starttime="20200102 16:16:20.700" endtime="20200102 16:16:47.186" critical="yes"></status>
 </test>
 <doc>Suite description</doc>
-<status status="PASS" starttime="20191226 17:10:31.990" endtime="20191226 17:10:47.624"></status>
+<status status="PASS" starttime="20200102 16:16:20.528" endtime="20200102 16:16:47.187"></status>
 </suite>
 <statistics>
 <total>
