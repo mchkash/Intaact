@@ -14,14 +14,16 @@ Selecting Project and Task from List1
     Wait Until Element is Visible  ${project_dropdown_list_of_project0}  timeout=10s
     click element  ${project_dropdown_list_of_project0}
 #  Selecting task
-    Wait Until Element is Visible  ${task_textbox0}  timeout=20s
-    Wait Until Element Is Enabled  ${task_textbox0}  timeout=20s
-    click element  ${task_textbox0}
+#    Wait Until Element is Visible  ${task_textbox0}  timeout=20s
+#    Wait Until Element Is Enabled  ${task_textbox0}  timeout=20s
+#    click element  ${task_textbox0}
     Wait Until Element is Visible  ${task_dropdown0}  timeout=20s
     click element  ${task_dropdown0}
-    Wait Until Element is Visible  ${selecting_task_dropdown0}  timeout=20s
+    Capture Page Screenshot		${OUTPUTDIR}/Reg1.png
+    Wait Until Page Contains Element  ${selecting_task_dropdown0}  timeout=20s
     Wait Until Element Is Enabled   ${selecting_task_dropdown0}  timeout=20s
     click element  ${selecting_task_dropdown0}
+    Capture Page Screenshot		${OUTPUTDIR}/Reg2.png
 
 
 

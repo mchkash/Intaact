@@ -12,5 +12,5 @@ Tc01_login
     Login Credentials   prokarma  shariprakash   Mch@2789
     Selecting Timesheet
     Selecting Project and Task from List1
-    Selecting Project and Task from List2
-    Close Browser Window
+#    Selecting Project and Task from List2
+#    Close Browser Window
