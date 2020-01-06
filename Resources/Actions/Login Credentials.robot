@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  C:/Users/shariprakash/PycharmProjects/Intaact/Resources/Locators/Intaact_loginpage.robot
+Resource  C:/Users/dkathiresan/PycharmProjects/Intaact/Intaact/Resources/Locators/Intaact_loginpage.robot
 Library  String
 
 

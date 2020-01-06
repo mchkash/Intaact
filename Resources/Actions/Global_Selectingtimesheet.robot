@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  C:/Users/shariprakash/PycharmProjects/Intaact/Resources/Locators/Global_Selectingtimesheet.robot
+Resource  C:/Users/dkathiresan/PycharmProjects/Intaact/Intaact/Resources/Locators/Global_Selectingtimesheet.robot
 
 *** Keywords ***
 Selecting Timesheet
